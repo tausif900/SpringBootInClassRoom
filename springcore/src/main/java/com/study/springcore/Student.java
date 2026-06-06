@@ -30,6 +30,14 @@ public class Student {
 		this.school = school;
 	}
 
+//	For constructor level only one bean should be present.
+//	@Autowired
+//	@Qualifier("National")
+	public Student(School school) {
+		super();
+		this.school = school;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -50,7 +58,8 @@ public class Student {
 		return school;
 	}
 
-	@Autowired
+//	@Autowired
+//	@Qualifier("National")
 	public void setSchool(School school) {
 		System.out.println("Setter Method");
 		this.school = school;

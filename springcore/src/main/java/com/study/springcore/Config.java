@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.study.springcore")
 public class Config {
 
-	@Bean		//bean is a method level annotation.
-	public School national() {
-		return new School(123, "KJ.Khilnani");
-	}
+//	@Bean		//bean is a method level annotation.
+//	public School national() {
+//		return new School(123, "KJ.Khilnani");
+//	}
 
 	@Bean
 	public School vikas() {
